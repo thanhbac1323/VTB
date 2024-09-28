@@ -1,37 +1,75 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600&display=swap" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-  </head>
-
-  <body>
-    <!-- <audio autoplay="autopaly">
-      <source src="renxi.mp3" type="audio/mp3" />
-    </audio> -->
-    <!-- 星空html -->
-    <!-- <div> -->
-    <div class="container2">
-      <div class="content">
-        <canvas id="universe"></canvas>
-      </div>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiêu đề Trang</title>
+    <style>
+        /* CSS để định dạng trang */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #333; /* Khung dưới tiêu đề */
+            padding-bottom: 10px;
+        }
+        .container {
+            display: flex;
+        }
+        .menu, .content, .sidebar {
+            border: 1px solid #ccc; /* Khung cho từng phần */
+            border-radius: 5px; /* Bo góc */
+            padding: 20px;
+            margin: 10px; /* Khoảng cách giữa các phần */
+        }
+        .menu {
+            width: 20%;
+            background-color: #f0f0f0;
+        }
+        .content {
+            width: 60%;
+        }
+        .sidebar {
+            width: 20%;
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Tiêu đề Trang</h1>
     </div>
-    <!-- </div> -->
-    <div class="title">
-      <!-- EDIT HERE -->
-      <h3 class="STARDUST1"></h3>
-      <h1 class="STARDUST2">Vu Thai Binh</h1>
-      <h3 class="STARDUST3">H A P P Y <strong>❤</strong> B I R T H D A Y</h3>
-      <img class="img" src="vtb2.jpg" alt="JUNO_OKYO" />
-      <canvas id="pinkboard"></canvas>
+    <div class="container">
+        <div class="menu">
+            <h3>Menu</h3>
+            <ul>
+                <li>Trang chủ</li>
+                <li>Giới thiệu</li>
+                <li>Liên hệ</li>
+            </ul>
+        </div>
+        <div class="content">
+            <h2>Nội dung chính</h2>
+            <p>Đây là nội dung chính của trang web.</p>
+        </div>
+        <div class="sidebar">
+            <h3>Bài đăng khác</h3>
+            <p>Bài đăng 1</p>
+            <p>Bài đăng 2</p>
+            <p>Bài đăng 3</p>
+            
+        </div>
     </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/particle.js"></script>
-    <script src="js/universe.js"></script>
-  </body>
+</body>
 </html>
+
+
