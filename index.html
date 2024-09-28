@@ -3,78 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tiêu Đề Trang</title>
+    <title>Giao diện</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #f4f4f4;
-        }
+    font-family: Arial, sans-serif;
+    background-color: #e0f7e9;
+}
 
-        .header {
-            background-color: #35424a;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
+.container {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr;
+    height: 100vh;
+}
 
-        .content {
-            display: flex;
-            padding: 20px;
-        }
+.header {
+    background-color: #d1fffc;
+    text-align: center;
+    padding: 20px;
+}
 
-        .menu, .right-menu {
-            flex: 1;
-            background: #ffffff;
-            margin: 10px;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
+.header h1 {
+    color: blue;
+    font-size: 24px;
+    margin: 0;
+}
 
-        .main-content {
-            flex: 2;
-            background: #ffffff;
-            margin: 10px;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
+.content {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 10px;
+    padding: 20px;
+}
 
-        .right-item {
-            background-color: #e9ecef;
-            margin: 10px 0;
-            padding: 10px;
-            border-radius: 5px;
-            text-align: center;
-        }
+.menu {
+    background-color: #c7dde2;
+    padding: 20px;
+    text-align: center;
+}
+
+.main-content {
+    background-color: #f0fff4;
+    padding: 20px;
+    text-align: center;
+}
+
+.right-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.right-item {
+    background-color: #d1fffc;
+    height: 80px;
+}
+
     </style>
 </head>
 <body>
-    <header class="header">
-        <h1>TIÊU ĐỀ TRANG</h1>
-    </header>
-    <div class="content">
-        <aside class="menu">
-            <h3>Menu</h3>
-            <ul>
-                <li><a href="#">Trang chủ</a></li>
-                <li><a href="#">Giới thiệu</a></li>
-                <li><a href="#">Dịch vụ</a></li>
-                <li><a href="#">Liên hệ</a></li>
-            </ul>
-        </aside>
-        <section class="main-content">
-            <h2>Nội dung chính</h2>
-            <p>Đây là nội dung chính của trang. Bạn có thể thêm văn bản, hình ảnh, hoặc bất kỳ thông tin nào bạn muốn hiển thị ở đây.</p>
-        </section>
-        <aside class="right-menu">
-            <h3>Nội dung bên phải</h3>
-            <div class="right-item">Nội dung 1</div>
-            <div class="right-item">Nội dung 2</div>
-            <div class="right-item">Nội dung 3</div>
-            <div class="right-item">Nội dung 4</div>
-        </aside>
+    <div class="container">
+        <header class="header">
+            <h1>TIÊU ĐỀ TRANG</h1>
+        </header>
+        <div class="content">
+            <aside class="menu">
+                <p>Menu</p>
+            </aside>
+            <section class="main-content">
+                <p>Nội dung chính</p>
+            </section>
+            <aside class="right-menu">
+                <div class="right-item"></div>
+                <div class="right-item"></div>
+                <div class="right-item"></div>
+                <div class="right-item"></div>
+            </aside>
+        </div>
     </div>
 </body>
 </html>
